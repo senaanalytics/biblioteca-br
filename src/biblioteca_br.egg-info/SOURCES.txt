@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/biblioteca_br/__init__.py
+src/biblioteca_br/b3.py
+src/biblioteca_br/bacen.py
+src/biblioteca_br/export.py
+src/biblioteca_br/ibge.py
+src/biblioteca_br/plot.py
+src/biblioteca_br.egg-info/PKG-INFO
+src/biblioteca_br.egg-info/SOURCES.txt
+src/biblioteca_br.egg-info/dependency_links.txt
+src/biblioteca_br.egg-info/requires.txt
+src/biblioteca_br.egg-info/top_level.txt
