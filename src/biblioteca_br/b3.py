@@ -14,12 +14,12 @@ def ibovespa(inicio: Optional[str] = None, fim: Optional[str] = None) -> pd.Data
     """
     Retorna o histórico do índice Ibovespa (^BVSP).
     
-    Parâmetros:
-        inicio (str, opcional): Data de início no formato 'YYYY-MM-DD'.
+    Args:
+        : Data de início no formato 'YYYY-MM-DD'.
         fim (str, opcional): Data de fim no formato 'YYYY-MM-DD'.
     
-    Retorna:
-        pd.DataFrame: DataFrame com as colunas padrão do yfinance (Open, High, Low, Close, Volume).
+    Returns:
+        DataFrame: DataFrame com as colunas padrão do yfinance (Open, High, Low, Close, Volume).
     """
     ticker = "^BVSP"
     logger.info(f"Buscando dados do Ibovespa ({ticker})...")
@@ -40,14 +40,14 @@ def acao(ticker: str, inicio: Optional[str] = None, fim: Optional[str] = None) -
     """
     Retorna o histórico de uma ação da B3.
     
-    Parâmetros:
-        ticker (str): Código da ação (ex: 'PETR4', 'VALE3'). 
+    Args:
+        : Código da ação (ex: 'PETR4', 'VALE3'). 
                       O código deve ser informado sem o '.SA', a função adiciona automaticamente.
         inicio (str, opcional): Data de início.
         fim (str, opcional): Data de fim.
     
-    Retorna:
-        pd.DataFrame: DataFrame com histórico de preços.
+    Returns:
+        DataFrame: DataFrame com histórico de preços.
     """
     # Garante que o ticker tenha o sufixo .SA (B3)
     if not ticker.endswith('.SA'):
@@ -73,13 +73,13 @@ def acoes(tickers: List[str], inicio: Optional[str] = None, fim: Optional[str] =
     """
     Retorna o histórico de múltiplas ações da B3 em um único DataFrame.
     
-    Parâmetros:
-        tickers (list): Lista de códgos de ações (ex: ['PETR4', 'VALE3']).
+    Args:
+        : Lista de códgos de ações (ex: ['PETR4', 'VALE3']).
         inicio (str, opcional): Data de início.
         fim (str, opcional): Data de fim.
     
-    Retorna:
-        pd.DataFrame: DataFrame com MultiIndex (ticker, coluna) ou com tickers como colunas.
+    Returns:
+        DataFrame: DataFrame com MultiIndex (ticker, coluna) ou com tickers como colunas.
     """
     tickers_b3 = [t if t.endswith('.SA') else f"{t}.SA" for t in tickers]
     logger.info(f"Buscando dados para múltiplas ações: {tickers_b3}")

@@ -1,6 +1,7 @@
 README.md
 pyproject.toml
 src/biblioteca_br/__init__.py
+src/biblioteca_br/analise.py
 src/biblioteca_br/b3.py
 src/biblioteca_br/bacen.py
 src/biblioteca_br/export.py
