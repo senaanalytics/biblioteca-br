@@ -1,0 +1,64 @@
+```
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Build and distribution
+dist/
+build/
+*.egg
+*.whl
+*.so
+*.dylib
+*.dll
+
+# Test files
+*.csv
+*.xlsx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Python specific
+.Python
+*.py[cod]
+*$py.class
+*$py.data
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+```
+
+#Meus
+ESCOPO.md
