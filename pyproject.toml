@@ -30,8 +30,8 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/senaanalytics/biblioteca-br"
-Repository = "https://github.com/senaanalytics/biblioteca-br.git"
+Repository = "https://github.com/senaanalytics/biblioteca-br"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
 include = ["biblioteca_br*"]
