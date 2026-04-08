@@ -8,6 +8,6 @@ visualização e exportação em uma interface unificada.
 from biblioteca_br import bacen
 
 __version__ = "0.1.0"
-__author__ = "Seu Nome"
+__author__ = "Isaque Sena"
 
 __all__ = ["bacen", "__version__"]

@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "biblioteca-br"
 version = "0.1.0"
 description = "Biblioteca Python para dados econômicos e financeiros brasileiros"
-authors = [{name = "Seu Nome", email = "seu@email.com"}]
+authors = [{name = "Isaque Sena", email = "isaquesenadasilva1@gmail.com"}]
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.8"
@@ -29,8 +29,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/seu-usuario/biblioteca-br"
-Repository = "https://github.com/seu-usuario/biblioteca-br.git"
+Homepage = "https://github.com/senaanalytics/biblioteca-br"
+Repository = "https://github.com/senaanalytics/biblioteca-br.git"
 
 [tool.setuptools.packages.find]
 where = ["."]
