@@ -1,9 +1,13 @@
-from biblioteca_br import pib, desemprego, populacao, ibge_ipca
+from biblioteca_br import bacen
 
-print("=== PIB (2015-2024) ===")
-df_pib = pib(inicio="201501", fim="202403")
-print(df_pib.tail())
+print("=== Selic (2020-2024) ===")
+df_selic = bacen.selic(inicio="01/01/2020", fim="31/12/2024")
+print(df_selic.tail())
 
-print("\n=== Desemprego (2020-2024) ===")
-df_des = desemprego(inicio="202001", fim="202403")
-print(df_des.tail())
+print("\n=== IPCA (2020-2024) ===")
+df_ipca = bacen.ipca(inicio="01/01/2020", fim="31/12/2024")
+print(df_ipca.tail())
+
+print("\n=== Dólar (2020-2024) ===")
+df_dolar = bacen.cambio("USD", inicio="01/01/2020", fim="31/12/2024")
+print(df_dolar.tail())
